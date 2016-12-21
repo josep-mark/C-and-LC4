@@ -1,0 +1,10 @@
+clear
+reset
+
+as program9 user lc4_stdio lc4_strings program9	# Links 4 .ASM files into 1 .OBJ
+ld program9				   	# loads the linked .OBJ
+
+as os os			     	 	# don't forget the OS!
+ld os
+
+break set END
